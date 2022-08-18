@@ -37,5 +37,7 @@ sudo bash ./build.sh -c ../config.txt`
 wait a very long time. Maybe an hour?
 
 
+# next steps
 
+All of the above will work except for one problem: not enough disk space. Resizing the virtual drive is cumbersome, so I'm looking into a way to create a pre-setup debian UTM that will already have enough storage for a full build.
 
