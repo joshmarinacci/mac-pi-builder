@@ -1,7 +1,7 @@
 This is a script to setup an emulated debian install to build Raspberry Pi OS on your Mac using UTM and Qemu.
 
 # setup a Debian Linux Virtual Machine on your Mac
-* install UTM 
+* [install UTM](https://mac.getutm.app) 
 * go here [Debian 10.4 (Minimal) | UTM](https://mac.getutm.app/gallery/debian-10-4-minimal) and click ‘Open in UTM’. It will download and install a VM
 * Go to networking settings on the VM, switch to ‘Emulated VLAN’  and add a port forwarding as shown here for 22022 to 22: [Setting Up Docker on macOS M1 Arm64 to Use Debian 10.4 Docker Engine - codeluge](https://www.codeluge.com/post/setting-up-docker-on-macos-m1-arm64-to-use-debian-10.4-docker-engine/)
 * boot the VM
