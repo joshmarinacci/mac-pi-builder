@@ -1,6 +1,7 @@
 # build Raspberry Pi OS on your Mac.
 
 Here you will find instructions and a helper script to setup an emulated Debian Linux virtual machine to build Raspberry Pi OS on your Mac using UTM and Qemu.
+Under the hood this uses the official [pi-gen](https://github.com/RPi-Distro/pi-gen) system to build the actual OS.
 
 # Setup a Debian Linux Virtual Machine on your Mac
 
@@ -27,14 +28,14 @@ or paste it [the contents into](https://github.com/joshmarinacci/mac-pi-builder/
 sudo bash ./setup.sh
 ```
 
-The script will install all required deps and check out the git-pi repo, and create a file called `config.txt` to
+The script will install all required deps and check out the pi-gen repo, and create a file called `config.txt` to
 put your customizations. Or you can manually run the same commands that are in [the script](https://github.com/joshmarinacci/mac-pi-builder/blob/main/setup.sh)
 
 # Build your Pi OS 
 
 inside the `pi-gen` dir run the `build.sh` script as root
 ```shell
-sudo bash ./build.sh -c ../config.txt`
+sudo bash ./build.sh -c ../config.txt
 ```
 
 wait a very long time. Maybe an hour?
